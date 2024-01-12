@@ -6,7 +6,7 @@
 /*   By: egumus <egumus@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 04:15:46 by egumus            #+#    #+#             */
-/*   Updated: 2023/11/30 00:29:37 by egumus           ###   ########.fr       */
+/*   Updated: 2023/12/06 18:24:35 by egumus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ void	check_is_all_accessable(t_map *map, t_state *state)
 		j = 0;
 		while (j < map->width)
 		{
-			if (map->board[i][j] != '1' && map->board[i][j] != '0'
-				&& map->board[i][j] != 'E')
+			if (map->board[i][j] != '1' && map->board[i][j] != '0')
 			{
 				free_map(map);
 				exit_err(1, "Cannot reachable all", state);

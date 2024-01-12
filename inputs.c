@@ -6,7 +6,7 @@
 /*   By: egumus <egumus@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 04:24:18 by egumus            #+#    #+#             */
-/*   Updated: 2023/11/28 05:23:59 by egumus           ###   ########.fr       */
+/*   Updated: 2023/12/06 18:11:52 by egumus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	ft_key_hook(int keycode, t_state *state)
 {
 	if (keycode == KEY_ESC)
 	{
+		mlx_destroy_window(state->mlx, state->win);
 		free_state(state);
 		exit(0);
 	}

@@ -6,7 +6,7 @@
 /*   By: egumus <egumus@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 01:51:08 by egumus            #+#    #+#             */
-/*   Updated: 2023/11/29 23:13:09 by egumus           ###   ########.fr       */
+/*   Updated: 2023/12/06 18:08:41 by egumus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void	map_check_init(t_state *state, int h, int w)
 
 static void	check_borders(char *line, int h, int w)
 {
-	if (h == 0 && !is_full_of(line, w, '1'))
+	if (h == 1 && !is_full_of(line, w, '1'))
 	{
 		free(line);
 		exit_err(4, "First layer is not full of '1'.", NULL);

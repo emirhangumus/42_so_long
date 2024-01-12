@@ -6,7 +6,7 @@
 /*   By: egumus <egumus@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 03:19:28 by egumus            #+#    #+#             */
-/*   Updated: 2023/11/29 23:21:55 by egumus           ###   ########.fr       */
+/*   Updated: 2023/12/06 18:23:57 by egumus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,6 @@ void	ft_write_image(t_state *state, int x, int y)
 	else if (state->map->board[y][x] == 'P')
 		mlx_put_image_to_window(state->mlx, state->win, state->img_paths->img_p,
 			x * TILE_SIZE, y * TILE_SIZE);
-}
-
-void	ft_write_score(t_state *state)
-{
-	char	*score;
-	char	*tmp;
-
-	score = ft_itoa(state->player->moves);
-	tmp = ft_strjoin("Score: ", score);
-	mlx_string_put(state->mlx, state->win, 10, 10, 0x00FF0000, tmp);
-	free(score);
-	free(tmp);
 }
 
 int	ft_put_images(t_state *state)

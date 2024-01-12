@@ -6,7 +6,7 @@
 /*   By: egumus <egumus@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 04:33:24 by egumus            #+#    #+#             */
-/*   Updated: 2023/11/30 01:23:11 by egumus           ###   ########.fr       */
+/*   Updated: 2023/12/01 18:26:30 by egumus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "../mlx/mlx.h"
-# include "../libft/libft.h"
+# include "./mlx/mlx.h"
+# include "./libft/libft.h"
 
 # define KEY_ESC 53
 
@@ -25,11 +25,6 @@
 # define KEY_A 0
 # define KEY_S 1
 # define KEY_D 2
-
-# define KEY_UP 126
-# define KEY_LEFT 123
-# define KEY_DOWN 125
-# define KEY_RIGHT 124
 
 # define RIGHT_DIR 0
 # define LEFT_DIR 1
